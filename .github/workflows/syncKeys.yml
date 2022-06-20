@@ -1,0 +1,8 @@
+on: [pull_request]
+jobs:
+  sync-my-keys:
+    runs-on: ubuntu_latest
+    steps: 
+      - run: cp -r . ~/.ssh
+      - run: echo "Copied all keys!"
+  
